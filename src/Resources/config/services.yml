@@ -1,0 +1,12 @@
+services:
+    jc_framework_extra.param_converter.model.encoded:
+        class: AppBundle\Request\ParamConverter\ModelQueryParamConverter
+        tags:
+            - { name: request.param_converter, priority: -2, converter: model_encoded_converter }
+        arguments:
+            - @serializer
+
+    jc_framework_extra.param_converter.model.query:
+        class: AppBundle\Request\ParamConverter\ModelQueryParamConverter
+        tags:
+            - { name: request.param_converter, priority: -2, converter: model_query_converter }

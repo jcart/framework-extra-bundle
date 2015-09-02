@@ -1,0 +1,23 @@
+{
+  "name": "jc/framework-extra-bundle",
+  "homepage": "http://github.com/jcart/framework-extra-bundle",
+  "keywords":["symfony2"],
+  "type":"library",
+  "license":"MIT",
+  "autoload": {
+    "psr-4" : {
+      "JC\\FrameworkExtraBundle" : "src/"
+    }
+  },
+  "target-dir": "JC/FrameworkExtraBundle",
+  "authors":[
+    {
+      "name":"John Cartwright",
+      "homepage":"http://jcartwright.ca"
+    }
+  ],
+  "require": {
+      "php": ">=5.5.0",
+      "sensio/framework-extra-bundle": "~3.0",
+  }
+}
