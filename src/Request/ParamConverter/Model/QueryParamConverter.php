@@ -25,7 +25,7 @@ class QueryParamConverter implements ParamConverterInterface {
         $model = $this->createModel($configuration);
 
         foreach ($request->query->all() as $query_parameter_key => $query_parameter_value) {
-            $accessor->setValue($model, $query_parameter_key, $query_parameter_value);
+            $this->accessor->setValue($model, $query_parameter_key, $query_parameter_value);
         }
 
         $request->attributes->set($configuration->getName(), $model);     
